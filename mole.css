@@ -1,0 +1,68 @@
+body{
+  background: url(https://st.depositphotos.com/1006542/4101/i/950/depositphotos_41012373-stock-photo-soil-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wgs {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 241px;
+  overflow: hidden;
+}
+
+.wgs__mole-head {
+  position: absolute;
+  left: 54px;
+  transition-property: margin-top;
+  transition-duration: 0.25s;
+  width: 188px;
+  height: 178px;
+}
+.wgs__mole-head:active{
+  border-radius: 50%;
+  background-color: yellow;
+}
+.wgs__dirt-pile {
+  position: absolute;
+  width: 320px;
+  height: 110px;
+  top: 131px;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 241px;
+}
+
+.pf {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  cursor: pointer;
+}
+
+.sb {
+  background-color: rgb(0, 2, 109);
+  border-bottom: 1px solid #645DED;
+  border-radius: 2em;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+.sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+}
+
+.sb__score-holder {
+  flex: 1 0 0;
+}
+
+.sb__game-over--hidden {
+  display: none;
+}
